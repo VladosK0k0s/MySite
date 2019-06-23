@@ -1,0 +1,294 @@
+
+#clock{
+            float: right;
+            top:1%;
+            right:5px;
+            width: auto;
+            height: auto; 
+            background: rgba(255,255,255,0.5); 
+            padding: 7px 7px 0 7px;
+            border: 1px solid rgb(248, 42, 6);
+            border-radius: 20px;
+            -webkit-box-shadow: 0px 2px 0px 0px rgba(33, 148, 52, 0.65);
+            -moz-box-shadow:    0px 2px 0px 0px rgba(110, 25, 206, 0.65);
+            box-shadow:         0px 2px 0px 0px rgba(230, 13, 139, 0.65);
+            font-size:25px;
+            
+        }
+#BANK{      float: left;
+            width: auto;
+            height: auto;
+
+        }
+#space{     float: left;
+            width: auto;
+            height: auto;
+
+        }                
+        .city{
+            display:block;
+            font-size:20px;
+            color: blue;
+            padding: 2px;
+             
+        }
+        .time{
+            font-weight: bold;
+            color: rgb(200,0,255);
+            
+        }
+        .dot {
+            height: 8px; width: 8px;
+            border-radius: 4px; 
+            background: blue;
+            position: absolute;
+          }
+        .but {
+            color: black;
+            border-radius: 50%;
+            border: groove;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            transition: 0s; 
+        }
+        .but:active{
+            transform: scale(0.8);
+        }
+        .s{
+            background-color: rgb(5, 255, 5);
+        }
+        .m{
+            background-color:rgb(255, 5, 5);
+        }
+        .l{
+            background-color:rgb(5, 5, 255);
+        }
+        .standart_but{
+            font-family: sans-serif;
+            font-size: 14px;
+            border: solid;
+            border-color: grey;
+            border-radius: 10px;
+            transition: 0ms;
+        }
+        .mirrror{
+            transition: 0.7s;
+            
+        }
+        .mirrror:hover{
+            transform: scaleY(-1);
+        }
+        .small:hover{
+            border-color: rgb(3, 112, 3);
+            background-color: rgb(5, 255, 5);
+        }
+        .medium:hover{
+            border-color: rgb(112, 3, 3);
+            background-color: rgb(255, 5, 5);
+        }
+        .large:hover{
+            border-color: rgb(3, 3, 112);
+            background-color: rgb(5, 5, 255);
+        }
+        .standart_but:active{
+            position: relative;
+            top:1px;
+            left: 1px;
+            transform: scale(0.97);
+        }
+        .butnum{
+            height: 20px; width: 20px;
+            font-size: 16px;
+            font-family: 'Courier New', Courier, monospace;
+            border: transparent;
+            text-align: center;
+        }
+        .range{
+            position:absolute;
+            top:100px;
+            right:5px;  
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 14px;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+        .fon{
+            background: rgba(184, 184, 184, 0.7);
+        }
+        #table_buildings{
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+            border-collapse: collapse;
+            position:absolute;
+            top:160px;
+            right:5px;
+            padding: 7px 7px 0 7px;
+            border: 5px green outset; 
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+            background: url(Images/panoram.jpg);
+            background-size: cover;
+        }
+        #table_buildings TD, TH {
+            padding: 3px; /* Поля вокруг содержимого таблицы */
+        }
+        #table_musora{
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+            border-collapse: collapse;
+            background: url(Images/police.jpg);
+            background-size: cover;
+            position:absolute;
+            top:290px;
+            right:5px;
+            padding: 7px 7px 0 7px;
+            border: 5px pink outset; 
+            color: rgb(255, 5, 159);
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #table_musora TD, TH {
+            padding: 3px; /* Поля вокруг содержимого таблицы */
+        }
+        #table_medics{
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+            border-collapse: collapse;
+            background: url(Images/medic.jpg);
+            background-size: cover;
+            position:absolute;
+            top:420px;
+            right:5px;
+            padding: 7px 7px 0 7px;
+            border: 5px blue outset; 
+            color: #0A00DF;
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #table_muedics TD, TH {
+            padding: 3px; /* Поля вокруг содержимого таблицы */
+        }
+        #table_fire{
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+            border-collapse: collapse;
+            background: url(Images/fire.jpg);
+            background-size: contain;
+            position:absolute;
+            top:515px;
+            right:5px;
+            padding: 7px 7px 0 7px;
+            border: 5px red outset; 
+            color: #FF0505;
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #table_fire TD, TH {
+            padding: 3px; /* Поля вокруг содержимого таблицы */
+        }
+        .constr{     
+            position: absolute  ;
+            top: 700px;
+            left: 700px;           
+        }
+        .blocks:hover .block{
+            transform: translateY(-100px);
+        }
+        .block{
+            float: left;
+            position:relative;
+            background-color: aqua;
+            margin: 2px;
+            border: 4px double;
+            transition: 1s linear;
+        }
+        .block:hover{
+            background-color: aqua; 
+            transform: scale(1.5) !important;
+        }
+        .opa{
+            opacity: 0.7;
+        }
+        #smallinfo{
+            margin: 3px;
+            float: left;
+            clear: left;
+            border: solid;
+            display: none;
+        }
+        #mediuminfo{
+            margin: 3px;
+            float: left;
+            clear: top;
+            border: solid;
+            display: none;
+        }
+        #largeinfo{
+            margin: 3px;
+            float: left;
+            clear: top;
+            border: solid;
+            display: none;
+        }
+        .red{
+            color: red;
+        }
+        .pink{
+            color: rgb(255, 5, 159);;
+        }
+        .blue{
+            color: blue;
+        }
+        .tabletext{
+            font-size: 18px;
+            font-weight: bold;
+            font-style: 'Courier New', Courier, monospace;
+        } 
+        .tableview TD{
+            padding: 5px;
+        }
+        .redback{
+            background-color: rgba(255,0,0,0.5);
+        }
+        .pinkback{
+            background-color: rgba(255, 5, 159,0.5);
+        }
+        .blueback{
+            background-color: rgba(0,0,255,0.5);
+        }
+        .poyava{
+            width: auto;
+            height: auto;
+            background-color: rgba(0,0,0,0.8);
+            font-size: 20px;
+            font-weight: bold;
+            font-style: 'Courier New', Courier, monospace;
+            color: white;
+            padding: 10px;
+            position: absolute;
+            right: 50%;
+            bottom: 20px;
+            opacity: 0;
+            /*transition: 1s;*/
+        }
+        .activepoyava{  
+            right: 300px;
+        }
+        .activehide{  
+            right: -200px;
+        }
+
+
+   
+
+
+        

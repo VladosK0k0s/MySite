@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="1.css" rel="stylesheet">
+    <script src="2.js"> </script>
+    <script src="jquery-3.4.0.js"></script>
+<style>
+    body{
+        background: url(Images/back.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+</style>    
+</head>
+<body>  
+    <div id="clock" >
+    <span class="city">Kyiv</span>
+    <span class="time" id="day" >  </span><span class="time" id="month" >  </span><span class="time" id="year" >  </span><br>
+    <span class="time" id="hours" ></span><span class="time" id="min" ></span><span class="time" id="sec" ></span><span class="time" id="mili" ></span>
+    </div>
+    <div id="BANK">
+    <span class="city">BANK</span>
+    <span  class="city" id="MONEY"></span>
+    </div>
+    <div id="space">
+    <span class="city">AREA</span>
+    <span  class="city" id="AREA"></span>
+    </div>
+    <script src="Date.js"></script>
+    <div class='range' >
+        <input  type="range" min='0' max="10" id="speed" onchange="tick()" value ='0'>
+        <table>
+                <tr><td><input type="checkbox" id="chbox1">x1</td><td><input type="checkbox" id="chbox2">x60</td><td><input type="checkbox" id="chbox3">x3600</td></tr>
+        </table>    
+    </div>
+    <div id="table_buildings">
+    <table>
+            <th rowspan="4"><span class="fon"> Buildings </span> </th>
+            <tr><td><input class="but s"  type = "button" OnClick="small_add('Builds');"></td> <th class="butnum"><span id="Builds_s">0</span></th> 
+                <th><span id="sm_Builds_sel"></span></th> <th><input class="standart_but small" OnClick="sm_delete('Builds');" type="button" value="Del"></th>
+            </tr>
+            <tr><td><input class="but m"  type = "button" OnClick="med_add('Builds');"></td> <th class="butnum"><span id="Builds_m"> 0</span></th>
+                <th><span id="med_Builds_sel"></span></th> <th> <input class="standart_but medium" OnClick="med_delete('Builds');" type="button" value="Del"></th>
+            </tr>
+            <tr><td><input class="but l"  type = "button" OnClick="large_add('Builds');"></td> <th class="butnum"><span id="Builds_l"> 0</span></th>
+                <th><span id="lar_Builds_sel"></span></th> <th> <input class="standart_but large" OnClick="lar_delete('Builds');" type="button" value="Del"></th>
+            </tr>
+   </table> 
+   </div>
+   <div id="table_musora">
+    <table>
+            <th rowspan="4"><span class="fon"> Musora </span> </th>
+            <tr><td><input class="but s"  type = "button" OnClick="small_add('Police');"></td> <th class="butnum"><span id="Police_s"> 0</span></th> 
+                <th><span id="sm_Police_sel"></span></th> <th><input class="standart_but small" OnClick="sm_delete('Police');" type="button" value="Del"></th>
+            </tr>
+            <tr><td><input class="but m"  type = "button" OnClick="med_add('Police');"></td> <th class="butnum"><span id="Police_m"> 0</span></th>
+                <th><span id="med_Police_sel"></span></th> <th> <input class="standart_but medium" OnClick="med_delete('Police');" type="button" value="Del"></th>
+            </tr>
+            <tr><td><input class="but l"  type = "button" OnClick="large_add('Police');"></td> <th class="butnum"><span id="Police_l"> 0</span></th>
+                <th><span id="lar_Police_sel"></span></th> <th> <input class="standart_but large" OnClick="lar_delete('Police');" type="button" value="Del"></th>
+            </tr>
+   </table> 
+    </div>
+    <div id="table_medics">
+    <table>
+            <th rowspan="4"><span class="fon"> Medics </span> </th>
+            <tr><td><input class="but s"  type = "button" OnClick="small_add('Medics');"></td> <th class="butnum"><span id="Medics_s"> 0</span></th> 
+                <th><span id="sm_Medics_sel"></span></th> <th><input class="standart_but small" OnClick="sm_delete('Medics');" type="button" value="Del"></th>
+            </tr>
+            <tr><td><input class="but l"  type = "button" OnClick="large_add('Medics');"></td> <th class="butnum"><span id="Medics_l"> 0</span></th>
+                <th><span id="lar_Medics_sel"></span></th> <th> <input class="standart_but large" OnClick="lar_delete('Medics');" type="button" value="Del"></th>
+            </tr>
+   </table> 
+    </div>
+    <div id="table_fire">
+    <table>
+            <th rowspan="4"><span class="fon"> Fire </span> </th>
+            <tr><td><input class="but s"  type = "button" OnClick="small_add('Fire');"></td> <th class="butnum"><span id="Fire_s"> 0</span></th> 
+                <th><span id="sm_Fire_sel"></span></th> <th><input class="standart_but small" OnClick="sm_delete('Fire');" type="button" value="Del"></th>
+            </tr>
+            <tr><td><input class="but m"  type = "button" OnClick="med_add('Fire');"></td> <th class="butnum"><span id="Fire_m"> 0</span></th>
+                <th><span id="med_Fire_sel"></span></th> <th> <input class="standart_but medium" OnClick="med_delete('Fire');" type="button" value="Del"></th>
+            </tr>
+   </table> 
+   </div>
+   <div id="smallinfo" class="smallinfoclass">
+   </div>
+   <div id="mediuminfo" class="mediuminfoclass">
+   </div>
+   <div id="largeinfo" class="largeinfoclass">
+   </div>
+   <div id="textpoyava">
+   </div>
+</body>
+</html>
